@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <h2 class="mb-4">Usuarios</h2>
+      <button class="btn btn-primary" (click)="mostrarUsuarios()">{{ buttonMostrar }}</button>
+      <hr class="m-4">
+      <div *ngIf="mostrar">
+        <ul *ngFor="let user of users">
+          <li>{{ user.name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
